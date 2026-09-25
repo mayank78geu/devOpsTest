@@ -1,11 +1,11 @@
 pipeline {
-   agent any
+    agent any
 
-   stages {
-      stage('Run Python') {
-         steps {
-             bat 'python --version && python3 hello.py'
+    stages {
+        stage('Run Python') {
+            steps {
+                bat '"C:/Users/Mayank Bhadani/AppData/Local/Python/bin/python.exe" --version && "C:/Users/Mayank Bhadani/AppData/Local/Python/bin/python.exe" hello.py'
             }
-          }
         }
-      }
+    }
+}
